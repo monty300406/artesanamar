@@ -1,0 +1,35 @@
+<!-- Botón de pago Mercado Pago -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Botón de Pago - Artesana Mar</title>
+</head>
+<body>
+
+  <h2>Producto: Collar artesanal</h2>
+  <p>Precio: $15.000</p>
+
+  <!-- Este botón lo generará el script de Mercado Pago -->
+  <div id="wallet_container"></div>
+
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+  <script>
+    // Reemplazá este Public Key con el tuyo
+    const mp = new MercadoPago('APP_USR-081ad4b6-2143-4af8-8bc9-311239c123eb', {
+      locale: 'es-AR' // Cambiá esto según tu país
+    });
+
+    mp.checkout({
+      preference: {
+        id: 'TU_ID_DE_PREFERENCIA'
+      },
+      render: {
+        container: '#wallet_container', // ID del contenedor
+        label: 'Comprar ahora', // Texto del botón
+      }
+    });
+  </script>
+
+</body>
+</html>

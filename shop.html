@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artesana Mar</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="firs">
+            <div class="first-container">
+                <a href="index.html">
+                    <img src="img/Recurso 2.png" alt="Logo" class="Logo" />
+                </a>
+                <h2 class="eslogan">Hacemos arte para vestir</h2>
+            </div>
+            <nav class="navbar">
+                <div class="nav-container">
+                    <ul class="txt-btn" id="main-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="shop.html" class="current">Tienda</a></li>
+                        <li><a href="aboutMe.html">Sobre mi</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="clientes.html">Clientes</a></li>
+                        <li>
+                            <a href="tallaYcuidados.html">Guía de tallas y Cuidados</a>
+                        </li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li class="cart" id="carritoIcono">
+                            <a href="cart.html">&#128722; Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-item">
+                <img src="img/Referencia Artesana.webp" alt="Producto Destacado 1">
+                <a href="#" class="btn-banner">Ver más</a>
+            </div>
+            <div class="banner-item">
+                <img src="img/Referencia ArtesanaPrueba.webp" alt="Producto Destacado 2">
+                <a href="#" class="btn-banner">Ver más</a>
+            </div>
+        </section>
+
+        <section class="categories">
+            <nav class="categories-nav">
+                <h3>Filtrar por categorias:</h3>
+                <ul>
+                    <li><a href="#Crochet">Crochet</a></li>
+                    <li><a href="#Macramé">Macramé</a></li>
+                    <li><a href="#Beachwear">Beachwear</a></li>
+                    <li><a href="#sets">Sets</a></li>
+                    <li><a href="#Crop Tops">Crop Tops</a></li>
+                    <li><a href="#Accesorios">Accesorios</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="shop-categories">
+
+            <!--Crochet-->
+            <div class="category-section" id="Crochet">
+                <h2>Crochet</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-id="1" data-nombre="Referencia Artesana">
+                        <a href="refArte.html">
+                            <img src="img/Referencia Artesana.webp" alt="Referencia Artesana">
+                        </a>
+                        <h3 id="nombre">Referencia Artesana</h3>
+                        <label for="opcion">Elige una opción:</label>
+                        <select class="opcion-producto">
+                            <option value="En tejido continuo - $150.000">En tejido continuo - $150.000</option>
+                            <option value="De ajustar - $140.000">De ajustar - $140.000</option>
+                            <option value="Con falda Crochet - $200.000">Con falda Crochet - $200.000</option>
+                        </select>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+
+                    <div class="product-card" data-id="2" data-nombre="Referencia Palomino">
+                        <a href="refPalo.html">
+                            <img src="img/SetCoral.webp" alt="Referencia Palomino">
+                        </a>
+                        <h3 id="nombre">Referencia Palomino</h3>
+                        <label for="opcion">Elige una opción:</label>
+                        <select class="opcion-producto">
+                            <option value="En tejido continuo - $150.000">En tejido continuo - $150.000</option>
+                            <option value="Con falda Crochet - $200.000">Con falda Crochet - $200.000</option>
+                        </select>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="3" data-nombre="Referencia Siena">
+                        <a href="refPalo.html">
+                            <img src="img/Prueba.webp" alt="Referencia Siena">
+                        </a>
+                        <h3 id="nombre">Referencia Siena</h3>
+                        <label for="opcion">Elige una opción:</label>
+                        <select class="opcion-producto">
+                            <option value="En tejido continuo - $150.000">En tejido continuo - $150.000</option>
+                            <option value="Con falda Crochet - $210.000">Con falda Crochet - $210.000</option>
+                        </select>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="4" data-nombre="Referencia Aurora" data-precio="170.000">
+                        <a href="refPalo.html">
+                            <img src="img/RefLucia.webp" alt="Referencia Aurora">
+                        </a>
+                        <h3 id="nombre">Referencia Aurora</h3>
+                        <p>
+                            En tejido continuo - $170.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="5" data-nombre="Referencia Baru" data-precio="140.000">
+                        <a href="refPalo.html">
+                            <img src="img/Pruebaa.WEBP" alt="Referencia Baru">
+                        </a>
+                        <h3 id="nombre">Referencia Baru</h3>
+                        <p>
+                            En tejido continuo - $140.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Macramé-->
+            <div class="category-section" id="Macramé">
+                <h2>Macramé</h2>
+                <div class="product-grid">
+
+                    <div class="product-card" data-id="6" data-nombre="Referencia Shells">
+                        <a href="refShells.html">
+                            <img src="img/Referencia Artesana.webp" alt="Referencia Shells">
+                        </a>
+                        <h3 id="nombre">Referencia Shells</h3>
+                        <label for="opcion">Elige una opción:</label>
+                        <select class="opcion-producto">
+                            <option value="De ajustar - $145.000">De ajustar - $145.000</option>
+                            <option value="Con falda Macramé - $190.000">Con falda Macramé - $190.000</option>
+
+                        </select>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="7" data-nombre="Referencia Lucia">
+                        <a href="refLucia.html">
+                            <img src="img/RefLucia.webp" alt="Referencia Lucia">
+                        </a>
+                        <h3 id="nombre">Referencia Lucia</h3>
+
+                        <label for="opcion">Elige una opción:</label>
+                        <select class="opcion-producto">
+                            <option value="En tejido continuo - $145.000">En tejido continuo - $145.000</option>
+                            <option value="Con crop top tejido o capa - $235.000">Con crop top tejido o capa - $235.000</option>
+
+                        </select>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="8" data-nombre="Referencia Estrella" data-precio="145.000">
+                        <a href="refLucia.html">
+                            <img src="img/Referencia ArtesanaPrueba.webp" alt="Referencia Estrella">
+                        </a>
+                        <h3 id="nombre">Referencia Estrella</h3>
+                        <p>
+                            De ajustar - $145.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="9" data-nombre="Enterizo Olivia" data-precio="185.000">
+                        <a href="refLucia.html">
+                            <img src="img/Referencia ArtesanaPrueba.webp" alt="Enterizo Olivia">
+                        </a>
+                        <h3 id="nombre">Enterizo Olivia</h3>
+                        <p>
+                            De ajustar - $185.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--BeachWear-->
+            <div class="category-section" id="Beachwear">
+                <h2>Beachwear</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-id="10" data-nombre="Referencia Amazonas" data-precio="80.000">
+                        <a href="refamazonas.html">
+                            <img src="img/Referencia Artesana.webp" alt="Referencia Amazonas">
+                        </a>
+                        <h3 id="nombre">Referencia Amazonas</h3>
+                        <p>
+                            De ajustar - $80.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="11" data-nombre="Capa Fiore" data-precio="120.000">
+                        <a href="capaFiore.html">
+                            <img src="img/Pruebaaa.webp" alt="Capa Fiore">
+                        </a>
+                        <h3 id="nombre">Capa Fiore</h3>
+                        <p>
+                            De ajustar - $120.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="12" data-nombre="Falda Vestido" data-precio="110.000">
+                        <a href="capaFiore.html">
+                            <img src="img/Pruebaa.WEBP" alt="Falda Vestido">
+                        </a>
+                        <h3 id="nombre">Falda Vestido</h3>
+                        <p>
+                            De ajustar - $110.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="13" data-nombre="Referencia Camelia" data-precio="80.000">
+                        <a href="capaFiore.html">
+                            <img src="img/Referencia ArtesanaPrueba.webp" alt="Referencia Camelia">
+                        </a>
+                        <h3 id="nombre">Referencia Camelia</h3>
+                        <p>
+                            De ajustar - $80.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="14" data-nombre="Pant Macramé" data-precio="110.000">
+                        <a href="capaFiore.html">
+                            <img src="img/Pruebaaaa.webp" alt="Pant Macramé">
+                        </a>
+                        <h3 id="nombre">Pant Macramé</h3>
+                        <p>
+                            De ajustar - $110.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="15" data-nombre="Vestido Luxury" data-precio="280.000">
+                        <a href="capaFiore.html">
+                            <img src="img/Prueba.webp" alt="Vestido Luxury">
+                        </a>
+                        <h3 id="nombre">Vestido Luxury</h3>
+                        <p>
+                            De ajustar - $280.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <!--Sets-->
+            <div class="category-section" id="sets">
+                <h2>Sets</h2>
+                <div class="product-grid">
+                    <div class="product-card" data-id="16" data-nombre="Set Mia">
+                        <a href="setMia.html">
+                            <img src="img/Referencia Artesana.webp" alt="Set Mia" data-precio="145.000">
+                        </a>
+                        <h3 id="nombre">Set Mia</h3>
+                        <p>
+                            De ajustar - $145.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="17" data-nombre="Set Olimpo" data-precio="190.000">
+                        <a href="setOlimpo.html">
+                            <img src="img/SetCoral.webp" alt="Set Olimpo">
+                        </a>
+                        <h3 id="nombre">Set Olimpo</h3>
+                        <p>
+                            De ajustar - $190.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="18" data-nombre="Set Perlas" data-precio="180.000">
+                        <a href="setOlimpo.html">
+                            <img src="img/Referencia ArtesanaPrueba.webp" alt="Set Perlas">
+                        </a>
+                        <h3 id="nombre">Set Perlas</h3>
+                        <p>
+                            De ajustar - $180.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="19" data-nombre="Set Cadenas" data-precio="250.000">
+                        <a href="setOlimpo.html">
+                            <img src="img/Referencia ArtesanaPrueba.webp" alt="Set Cadenas">
+                        </a>
+                        <h3 id="nombre">Set Cadenas</h3>
+                        <p>
+                            De ajustar - $250.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="20" data-nombre="Set Tayrona">
+                        <a href="setOlimpo.html">
+                            <img src="img/Pruebaaaa.webp" alt="Set Tayrona">
+                        </a>
+                        <h3 id="nombre">Set Tayrona</h3>
+                        <p>
+                            También puedes llevar las piezas por separado. <br>
+                        </p>
+                        <label for="opcion">Elige una opción:</label>
+                        <select class="opcion-producto">
+                            <option value="De ajustar - $175.000">De ajustar - $175.000</option>
+                            <option value="Crop Top - $95.000">Crop Top - $95.000</option>
+                            <option value="Falda - $95.00">Falda - $95.000</option>
+                        </select>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <div class="product-card" data-id="21" data-nombre="Set Coral" data-precio="190.000">
+                        <a href="setOlimpo.html">
+                            <img src="img/SetCoral.webp" alt="Set Coral">
+                        </a>
+                        <h3 id="nombre">Set Coral</h3>
+                        <p>
+                            De ajustar - $190.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Crop Tops-->
+            <div class="category-section" id="Crop Tops">
+                <h2>Crop Tops</h2>
+                <div class="product-grid">
+
+                    <div class="product-cardCrop" class="product-card" data-id="22" data-nombre="Crop Top Tejido"
+                        data-precio="120.000">
+                        <a href="croptoptejido.html">
+                            <img src="img/Referencia Artesana.webp" alt="Crop Top Tejido">
+                        </a>
+                        <h3 id="nombre">Crop Top Tejido</h3>
+                        <p>
+                            Precio: $120.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Accesorios-->
+            <div class="category-section" id="Accesorios">
+                <h2>Accesorios</h2>
+                <div class="product-grid">
+                    <div class="product-cardAcce" data-id="23" data-nombre="Bolso Tejido" data-precio="75.000">
+                        <a href="bolsotejido.html">
+                            <img src="img/Referencia Artesana.webp" alt="Bolso Tejido">
+                        </a>
+                        <h3 id="nombre">Bolso Tejido</h3>
+                        <p>
+                            Precio: $75.000
+                        </p>
+                        <button class="agregar-carrito">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carrito-modal">
+                <div class="carrito-contenido"></div>
+                <p class="total-carrito">Total: $0</p>
+                <button class="continuar-compra">Continuar con la compra</button>
+                <button class="vaciar-carrito">Vaciar carrito</button>
+                <button class="cerrar-carrito">Cerrar</button> </div>
+
+            </div>
+
+
+        </section>
+    </main>
+    <script src="JavaScript/interactShop.js"></script>
+</body>
+<footer class="footerContainer">
+    <div class="footerContent">
+
+        <!-- Columna 1: Logo y Frase -->
+        <div class="footerColumn footerBrand">
+            <img src="img/Recurso 2.png" alt="Artesana Mar Logo" class="footerLogo" />
+            <p class="footerQuote">✨ "Hacemos arte para vestir" ✨</p>
+        </div>
+
+        <!-- Columna 2: Enlaces Importantes -->
+        <div class="footerColumn footerLinks">
+            <h4>Información</h4>
+            <a href="faq.html">Preguntas Frecuentes</a>
+            <a href="terms.html">Términos y Condiciones</a>
+            <a href="privacy.html">Política de Privacidad</a>
+        </div>
+
+        <!-- Columna 3: Contacto y Métodos de Pago -->
+        <div class="footerColumn footerContact">
+            <h4>Contacto</h4>
+            <p><i class="fab fa-instagram" style="color: #ffffff;"></i> artesanamar@gmail.com</p>
+            <p><i class="fab fa-whatsapp" style="color: #ffffff;"></i> +573197356331</p>
+            <h4>Métodos de Pago</h4>
+            <div class="footerPayments">
+                <img src="img/Logo Nequi.png" alt="Nequi" />
+                <img src="img/Logo Bancolombia.png" alt="Bancolombia" />
+                <img src="img/Logo Daviplata.png" alt="Daviplata" />
+                <img src="img/Logo PSE.png" alt="PSE" />
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footerCopyright">
+        <p>© 2025 Artesana Mar. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</html>

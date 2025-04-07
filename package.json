@@ -1,0 +1,8 @@
+{
+    "name": "api-mercadopago-artesana-mar",
+    "version": "1.0.0",
+    "main": "index.js",
+    "dependencies": {
+        "mercadopago": "^1.19.0"
+    }
+}

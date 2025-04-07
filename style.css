@@ -1,0 +1,1061 @@
+:root {
+  --main-color: #c7b65c;
+  --primary-color: #f7b3cc;
+  --secondary-color: #ee5840;
+  --tertiary-color: #f3a632;
+  --cuartiary-color: #f4e7d7;
+}
+
+body,
+html {
+  font-family: "Playfair Display", serif;
+  color: var(--secondary-color);
+  line-height: 1.7em;
+  background-color: var(--cuartiary-color);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 95px;
+  /* Debe ser mayor o igual a la altura del header */
+}
+
+header {
+  position: fixed; /* Para que se mantenga fijo en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95px; /* Ajusta según el diseño */
+  background-color: white; /* O el color que prefieras */
+  z-index: 1000; /* Asegura que esté por encima del banner */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+  
+  
+}
+
+.first-container {
+  position: fixed;
+  width: 100vw;
+  height: 95px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(76deg,
+      rgba(247, 179, 204, 0.75) 30%,
+      rgba(244, 231, 215, 0.75) 62%);
+  z-index: 10;
+
+}
+
+.first {
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+}
+
+.Logo {
+  width: 50px;
+  height: auto;
+  padding-top: 9px;
+  padding-left: 300px;
+  z-index: 10;
+}
+
+.eslogan {
+  text-align: right;
+  padding-right: 280px;
+  margin-top: -46px;
+  z-index: 10;
+}
+
+.nav-container {
+  width: 1100px;
+  padding: 0px;
+  z-index: 10;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 130px;
+  z-index: 10;
+}
+
+.current {
+  font-weight: bold;
+  z-index: 10;
+}
+
+.txt-btn {
+  transform: translateY(-100px);
+  transform: translateX(-213px);
+  margin-top: -18px;
+  color: #000;
+  padding-top: 72px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 10px;
+}
+
+.txt-btn a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+}
+
+.navbar ul {
+  list-style: none;
+  float: right;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.fotoPrincipal img {
+  width: 100%;
+  height: auto;
+}
+
+.cart a {
+  text-decoration: none;
+  transform: translateX(465px);
+}
+
+.buy-button {
+  position: absolute;
+  left: 600px;
+  top: 1100px;
+  color: #000;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.buy-button:hover {
+
+  background: linear-gradient(76deg,
+      rgba(244, 231, 215, 0.5) 0%,
+      rgba(243, 166, 50, 0.5) 100%);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-left: 18px;
+}
+
+.galleryImages {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.galleryImages img {
+  width: 100%;
+  height: auto;
+}
+
+
+.galleryCaption {
+  font-family: "Montserrat", sans-serif;
+}
+
+.caption {
+  font-family: "Montserrat", sans-serif;
+}
+
+.add-to-cart {
+  color: var(--cuartiary-color);
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 120px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart:hover {
+  background-color: var(--tertiary-color);
+  transform: scale(1.05);
+}
+
+.littleText {
+  display: flex;
+  background-color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 10px;
+  border: 3px solid #000;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 80%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+
+  font-size: 20px;
+}
+
+.text h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+}
+
+.text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+/* Estilos Generales */
+.footerContainer {
+  background-color: #ff69b4;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Columnas del Footer */
+.footerColumn {
+  flex: 1;
+  padding: 10px;
+  min-width: 250px;
+  /* Asegura que se vean bien en móviles */
+}
+
+/* Logo y Frase */
+.footerBrand {
+  text-align: center;
+}
+
+.footerLogo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footerQuote {
+  font-family: "Playfair Display", italic;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Enlaces */
+.footerLinks h4,
+.footerContact h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footerLinks a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footerLinks a:hover {
+  color: #f4a261;
+}
+
+
+
+/*Estilo tienda*/
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 80px;
+  z-index: 20;
+}
+
+.banner-item {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.banner-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.banner-item img:hover {
+  transform: scale(1.05);
+}
+
+.btn-banner {
+    color: var(--cuartiary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 180px;
+    margin-top: 20px;
+    width: 130px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+
+
+.btn-banner:hover {
+  background-color: var(--tertiary-color);
+    transform: scale(1.05);
+}
+
+/* Categorías */
+.categories-nav {
+  text-align: center;
+  padding: 20px;
+}
+
+.categories-nav h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.categories-nav ul {
+  list-style: none;
+  padding: 0;
+  font-weight: bold;
+}
+
+.categories-nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.categories-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.categories-nav a:hover {
+  color: var(--tertiary-color)
+}
+
+/* Secciones de productos */
+.category-section {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.category-section h2 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Grid de productos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas de producto */
+.product-card {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-card img:hover {
+  opacity: 0.8;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+  font-family: "Montserrat", sans-serif;
+}
+
+.product-cardCrop,
+.product-cardAcce {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+}
+
+.product-cardCrop:hover,
+.product-cardAcce:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-cardCrop img,
+.product-cardAcce img {
+  width: 30%;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-cardCrop img:hover,
+.product-cardAcce img:hover {
+  opacity: 0.8;
+}
+
+
+.product-cardCrop h3,
+.product-cardAcce h3 {
+  font-size: 18px;
+  color: #000;
+  margin: 10px 0;
+}
+
+.product-cardCrop p,
+.product-cardAcce P {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+  .banner {
+      flex-direction: column;
+  }
+
+  .categories-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .categories-nav li {
+      margin: 5px;
+  }
+}
+
+
+
+
+/* Contacto */
+.footerContact p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* MÉTODOS DE PAGO */
+.footerPayments {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* Espacio entre los iconos */
+  flex-wrap: wrap;
+  /* Permite que los métodos de pago se ajusten si hay muchos */
+}
+
+.footerPayments img {
+  width: 70px;
+  height: 60px;
+  /* Mantiene la proporción */
+  margin: 5px;
+  transition: transform 0.3s ease;
+  /* Efecto al pasar el mouse */
+}
+
+.footerPayments img:hover {
+  transform: scale(1.1);
+  /* Efecto de agrandamiento */
+}
+
+/* Derechos de Autor */
+.footerCopyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Estilos generales sobre mi */
+.sobre-marca {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: left;
+}
+
+/* Imagen alineada a la izquierda */
+.imagen-creadora img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto a la derecha con mejor legibilidad */
+.texto-marca {
+  font-family: "Montserrat", sans-serif;
+  max-width: 500px;
+  line-height: 1.6;
+  /* Espaciado cómodo para leer */
+  font-size: 1.1em;
+}
+
+/* Asegura que los párrafos tengan espacio entre ellos */
+.texto-marca p {
+  margin-bottom: 15px;
+  justify-content: center;
+  text-align: justify;
+}
+
+/* Botón Contáctame */
+.btn {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: white;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--tertiary-color);
+  transform: scale(1.05);
+}
+
+
+/*Estilos del blog*/
+
+
+/*Estilos seccion clientes*/
+
+.containerClientes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Testimonios */
+
+.containerClientes h2 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 30px;
+}
+
+.testimonios {
+  background-color: var(--cuartiary-color);
+}
+.testimonios p {
+  text-align: justify;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.clientes img {
+  width: 100%;
+  border: var(--cuartiary-color);
+  border-radius: 10px;
+  
+}
+
+.testimoniosC {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 50px;
+  background-color: var(--cuartiary-color);
+  
+}
+
+
+/* Historias de Éxito */
+.success-stories {
+  margin-top: 1px;
+}
+
+.success-stories h2 {
+  padding-top: 30px;
+}
+
+.success-story { 
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.success-story p {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+.success-story img {
+  max-width: 30%;
+  height: auto;
+  margin-top: 15px;
+}
+
+/* Galería de Clientes */
+.customer-gallery {
+  margin-top: 40px;
+}
+
+.customer-gallery h2 {
+  padding-top: 30px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 50%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA de la Tienda */
+.cta-shop {
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.cta-shop h2 {
+  padding-top: 30px;
+}
+
+.cta-shop .button {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-shop .button:hover {
+  background-color: var(--tertiary-color);
+  transform: scale(1.05);
+}
+
+/*Estilos generales de tallas y cuidados*/
+.tallasycuidados {
+  background-color: #f9f3ec;
+  /* Color de fondo suave */
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  /* Sombra ligera */
+  text-align: center;
+  align-items: center;
+}
+
+.tallasycuidados h2 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+}
+
+.tallas,
+.cuidados {
+  width: 100%;
+  margin: auto;
+}
+
+.imageTallas {
+  display: flex;
+  /* Hace que las imágenes se alineen en una fila */
+  gap: 20px;
+  /* Espacio entre imágenes */
+  flex-wrap: wrap;
+  /* Evita que se desborden en pantallas pequeñas */
+  flex-wrap: nowrap;
+}
+
+.imageTallas img {
+  max-width: 100%;
+  /* Asegura que las imágenes no se salgan del contenedor */
+  height: auto;
+  /* Mantiene la proporción */
+  width: 100%;
+  /* Controla el tamaño (ajusta según sea necesario) */
+}
+
+.descripcion-tallas h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.descripcion-tallas p {
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  text-align: justify;
+}
+
+.cuidados {
+  padding-top: 20px;
+}
+
+.lista-cuidados {
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+  text-align: justify;
+  justify-content: center;
+  transform: translateX(-40px);
+}
+
+/* Estilos generales de la página de contacto */
+.contactContainer {
+  text-align: center;
+  padding: 150px 50px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.contactContainer h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Enlaces de contacto (WhatsApp e Instagram) */
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.whatsappBtn,
+.instagramLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 300px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsappBtn {
+  background-color: #25D366;
+}
+
+.instagramLink {
+  background-color: #E1306C;
+}
+
+.whatsappBtn:hover,
+.instagramLink:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos dentro de los botones */
+.imgWhatsapp,
+.imgInsta {
+  width: 24px;
+  height: 24px;
+}
+
+/* Estilos del formulario */
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/*Estilos preguntas frecuentes*/
+
+.containerFaq {
+  padding-top: 130px;
+  padding-left: 30px;
+}
+
+.containerFaq h1 {
+  padding-bottom: 40px;
+}
+
+.faq {
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.contactFaq p {
+  padding-top: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btnFaq {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: white;
+  padding: 12px 24px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background 0.3s ease;
+  margin-left: 600px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*.btnFaq:hover {
+  background: var(--tertiary-color);
+  transform: scale(1.05);
+}*/
+
+.btnFaq:hover {
+  background: var(--tertiary-color);
+  transform: scale(1.05);
+}
+
+/*Estilos terminos y condiciones*/
+
+.containerTyC {
+  align-items: center;
+  justify-content: center;
+  text-align:justify;
+  padding: 150px;
+}
+
+.containerTyC h1 {
+  padding-bottom: 20px;
+}
+
+.terminos p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sectionTerms h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/*Estilos carrito*/
+
+.carrito-modal {
+  display: none; /* Inicialmente oculto */
+  position: fixed; /* Para que se quede fijo en la pantalla */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrarlo en la pantalla */
+  background-color: var(--secondary-color); /* Un fondo claro para verlo */
+  border: 2px solid var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+  min-width: 300px; /* Un ancho mínimo */
+  max-height: 80vh; /* Altura máxima para evitar que ocupe toda la pantalla */
+  overflow-y: auto; /* Barra de desplazamiento si el contenido es muy largo */
+}
+
+.carrito-modal p {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.carrito-contenido {
+  margin-bottom: 15px;
+}
+
+.item-carrito {
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.item-carrito:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.total-carrito {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.continuar-compra {
+  background-color: var(--primary-color); /* Un color llamativo para el botón */
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.continuar-compra:hover {
+  background-color: var(--tertiary-color);
+}
+
+.vaciar-carrito {
+  background-color: var(--primary-color); /* Un color llamativo para el botón */
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  
+}
+
+.vaciar-carrito:hover {
+  background-color: var(--tertiary-color);
+}
+
+.cerrar-carrito {
+  background-color: var(--primary-color); /* Un color llamativo para el botón */
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  
+}
+
+.cerrar-carrito:hover {
+  background-color: var(--tertiary-color)
+  
+}

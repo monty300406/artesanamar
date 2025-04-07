@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulsera artesanal | Artesana Mar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="producto" 
+        data-title="Pulsera artesanal" 
+        data-price="15000" 
+        data-image="https://tusitio.com/imagenes/pulsera.jpg">
+
+    <h1>Pulsera artesanal</h1>
+    <img src="https://tusitio.com/imagenes/pulsera.jpg" alt="Pulsera artesanal" width="300">
+    <p>Precio: $15.000</p>
+    <p>Hecha a mano con hilo encerado y piedras naturales.</p>
+
+    <!-- Botón y contenedor del botón de pago -->
+    <div id="wallet_container" style="margin-top: 20px;"></div>
+    <button onclick="pagar()">Comprar ahora</button>
+
+  </main>
+
+  <!-- SDK de Mercado Pago -->
+  <script src="https://sdk.mercadopago.com/js/v2"></script>
+
+  <script>
+    const mp = new MercadoPago('APP_USR-081ad4b6-2143-4af8-8bc9-311239c123eb', { locale: 'es-AR' }); // Reemplazá con tu public key
+
+    async function pagar() {
+      const producto = document.querySelector('.producto');
+      const title = producto.dataset.title;
+      const price = producto.dataset.price;
+      const image = producto.dataset.image;
+
+      const res = await fetch('/JavaScript/crear-preferencia.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          title,
+          price,
+          quantity: 1,
+          image
+        })
+      });
+
+      const data = await res.json();
+
+      if (data.id) {
+        mp.checkout({
+          preference: {
+            id: data.id
+          },
+          render: {
+            container: '#wallet_container',
+            label: 'Pagar con Mercado Pago'
+          }
+        });
+      } else {
+        alert('Hubo un error al generar la orden de pago.');
+      }
+    }
+  </script>
+
+</body>
+</html>
