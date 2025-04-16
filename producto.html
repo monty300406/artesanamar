@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Producto</title>
+  <title>Producto - Collar artesanal</title>
   <script src="https://sdk.mercadopago.com/js/v2"></script>
 </head>
 <body>
@@ -13,22 +13,22 @@
   <div id="wallet_container"></div>
 
   <script>
-    const mp = new MercadoPago('APP_USR-081ad4b6-2143-4af8-8bc9-311239c123eb', {
+    const mp = new MercadoPago('APP_USR-081ad4b6-2143-4af8-8bc9-311239c123eb4', {
       locale: 'es-AR'
     });
 
-    fetch('/api/create_preference', {
+    fetch("http://localhost:3000/api/create_preference", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         title: 'Collar artesanal',
-        price: 500,
+        unit_price: 500,
         quantity: 1
       })
     })
-    .then(res => res.json())
+    .then(response => response.json())
     .then(data => {
       mp.checkout({
         preference: {
@@ -39,6 +39,10 @@
           label: 'Comprar ahora'
         }
       });
+    })
+    .catch(error => {
+      console.error("Error al crear preferencia:", error);
+      alert("Hubo un problema al generar el pago. Intenta nuevamente.");
     });
   </script>
 
