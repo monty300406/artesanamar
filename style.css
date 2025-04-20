@@ -1059,3 +1059,134 @@ header {
   background-color: var(--tertiary-color)
   
 }
+
+/*Estilos cada producto*/
+
+.producto-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.producto-imagen {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.producto-imagen img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.producto-info {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.producto-info h1 {
+  font-size: 2rem;
+  padding-top: 100px;
+  color: #212121;
+  font-family: "Playfair Display", serif;
+}
+
+.producto-info p {
+  font-size: 1rem;
+  color: #424242;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#product-options select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.producto-precio {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.color-selector p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.color-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 0.5rem;
+}
+
+.color-options label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.color-options input[type="radio"] {
+  display: none;
+}
+
+.color-options img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.color-options input[type="radio"]:checked + img {
+  border: 3px solid #D32F2F;
+}
+
+button[type="submit"] {
+  background-color: var(--secondary-color); /* Un color llamativo para el botón */
+  color: black;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--tertiary-color);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .producto-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .producto-imagen img {
+    max-width: 100%;
+  }
+
+  .color-options {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
