@@ -32,7 +32,7 @@
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="shop.html" class="current">Tienda</a></li>
                         <li><a href="aboutMe.html">Sobre mi</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        
                         <li><a href="clientes.html">Clientes</a></li>
                         <li><a href="tallaYcuidados.html">Guía de tallas y Cuidados</a></li>
                         <li><a href="contact.html">Contacto</a></li>
@@ -55,83 +55,124 @@
             <h1>Referencia Aurora</h1>
             <p>Traje de baño de una pieza, con detalles tejidos a mano, doble faz. <br>
 
-            Pidelo en tus colores favoritos, escoge el tipo de panty entre brasilera, 
-            tanga y ancha, tambien puedes pedir talla difente en bra y panty. </p>
+                Pidelo en tus colores favoritos, escoge el tipo de panty entre brasilera,
+                tanga y ancha, tambien puedes pedir talla difente en bra y panty. </p>
 
             <!-- Formulario de Opciones -->
-            
 
-                <!-- Precio Mostrado -->
-                <div class="producto-precio" id="precio-mostrado">En tejido continuo - $170.000</div>
 
-                <!-- Talla Top -->
-                <div>
-                    <label for="top-size">Talla Top:</label>
-                    <select id="top-size" name="topSize" required>
-                        <option value="" disabled selected>Selecciona tu talla</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
+            <!-- Precio Mostrado -->
+            <div class="producto-precio" id="precio-mostrado">En tejido continuo - $170.000</div>
+
+            <!-- Talla Top -->
+            <div>
+                <label for="top-size">Talla Top:</label>
+                <select id="top-size" name="topSize" required>
+                    <option value="" disabled selected>Selecciona tu talla</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+
+            <!-- Talla Panty -->
+            <div>
+                <label for="panty-size">Talla Panty:</label>
+                <select id="panty-size" name="pantySize" required>
+                    <option value="" disabled selected>Selecciona tu talla</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+            </div>
+
+            <!-- Color -->
+            <!-- Color Principal -->
+            <div class="color-selector">
+                <p>Elige el color <strong>principal</strong>:</p>
+                <div class="color-options">
+                    <label>
+                        <input type="radio" name="colorPrincipal" value="Negro" required />
+                        <img src="img/NegroC.png" alt="Color Negro" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorPrincipal" value="Rojo" required />
+                        <img src="img/RojoC.png" alt="Color Rojo" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorPrincipal" value="Beige" required />
+                        <img src="img/MoradoC.png" alt="Color Morado" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorPrincipal" value="Rosado" required />
+                        <img src="img/RosadoC.png" alt="Color Rosado" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorPrincipal" value="Azul" required />
+                        <img src="img/AzulC.png" alt="Color Azul" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorPrincipal" value="Azul Claro" required />
+                        <img src="img/Azul ClaroC.png" alt="Color Azul Claro" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorPrincipal" value="Blanco" required />
+                        <img src="img/BlancoC.png" alt="Color Blanco" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorPrincipal" value="Verde Oliva" required />
+                        <img src="img/VerdeOlivaC.png" alt="Color Verde Oliva" />
+                    </label>
                 </div>
+            </div>
 
-                <!-- Talla Panty -->
-                <div>
-                    <label for="panty-size">Talla Panty:</label>
-                    <select id="panty-size" name="pantySize" required>
-                        <option value="" disabled selected>Selecciona tu talla</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
+            <!-- Color Secundario -->
+            <div class="color-selector">
+                <p>Elige el color <strong>secundario</strong>:</p>
+                <div class="color-options">
+                    <label>
+                        <input type="radio" name="colorSecundario" value="Negro" required />
+                        <img src="img/NegroC.png" alt="Color Negro" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorSecundario" value="Rojo" required />
+                        <img src="img/RojoC.png" alt="Color Rojo" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorSecundario" value="Beige" required />
+                        <img src="img/MoradoC.png" alt="Color Morado" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorSecundario" value="Rosado" required />
+                        <img src="img/RosadoC.png" alt="Color Rosado" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorSecundario" value="Azul" required />
+                        <img src="img/AzulC.png" alt="Color Azul" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorSecundario" value="Azul Claro" required />
+                        <img src="img/Azul ClaroC.png" alt="Color Azul Claro" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorSecundario" value="Blanco" required />
+                        <img src="img/BlancoC.png" alt="Color Blanco" />
+                    </label>
+                    <label>
+                        <input type="radio" name="colorSecundario" value="Verde Oliva" required />
+                        <img src="img/VerdeOlivaC.png" alt="Color Verde Oliva" />
+                    </label>
                 </div>
-
-                <!-- Color -->
-                <div class="color-selector">
-                    <p>Elige el color principal:</p>
-                    <div class="color-options">
-                        <label>
-                            <input type="radio" name="color" value="Negro" required />
-                            <img src="img/NegroC.png" alt="Color Negro" />
-                        </label>
-                        <label>
-                            <input type="radio" name="color" value="Rojo" required />
-                            <img src="img/RojoC.png" alt="Color Blanco" />
-                        </label>
-                        <label>
-                            <input type="radio" name="color" value="Beige" required />
-                            <img src="img/MoradoC.png" alt="Degradado 1" />
-                        </label>
-                        <label>
-                            <input type="radio" name="color" value="Negro" required />
-                            <img src="img/RosadoC.png" alt="Degradado 2" />
-                        </label>
-                        <label>
-                            <input type="radio" name="color" value="Rojo" required />
-                            <img src="img/AzulC.png" alt="Degradado 3" />
-                        </label>
-                        <label>
-                            <input type="radio" name="color" value="Beige" required />
-                            <img src="img/Azul ClaroC.png" alt="Degradado 4" />
-                        </label>
-                        <label>
-                            <input type="radio" name="color" value="Rojo" required />
-                            <img src="img/BlancoC.png" alt="Color azul" />
-                        </label>
-                        <label>
-                            <input type="radio" name="color" value="Beige" required />
-                            <img src="img/VerdeOlivaC.png" alt="Color Rosa" />
-                        </label>
-                    </div>
-                </div>
+            </div>
 
 
-                <!-- Botón -->
-                <button type="submit">Agregar al carrito</button>
+
+            <!-- Botón -->
+            <button type="submit">Agregar al carrito</button>
             </form>
         </div>
     </main>

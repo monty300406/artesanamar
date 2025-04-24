@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
 </head>
 
 <body>
@@ -34,7 +34,9 @@
                         <li><a href="aboutMe.html">Sobre mi</a></li>
                         
                         <li><a href="clientes.html">Clientes</a></li>
-                        <li><a href="tallaYcuidados.html">Guía de tallas y Cuidados</a></li>
+                        <li>
+                            <a href="tallaYcuidados.html">Guía de tallas y Cuidados</a>
+                        </li>
                         <li><a href="contact.html">Contacto</a></li>
                         <li class="cart" id="carritoIcono">
                             <a href="cart.html">&#128722; Carrito</a>
@@ -47,30 +49,27 @@
     <main class="producto-container">
         <!-- Imagen del Producto -->
         <div class="producto-imagen">
-            <img src="img/Ref palo 4.jpeg" alt="Referencia Palomino" />
+            <img src="img/Set mia (2).jpeg" alt="Set Mia" />
         </div>
 
         <!-- Información del Producto -->
         <div class="producto-info">
-            <h1>Referencia Palomino</h1>
-            <p>Traje de baño de dos piezas, con detalles tejidos a mano, doble faz. <br>
-
-                Pidelo en tus colores favoritos, escoge el tipo de panty entre brasilera,
-                tanga y ancha, tambien puedes pedir talla difente de bra y panty. </p>
+            <h1>Enterizo Olivia</h1>
+            <p>
+                Set tejido de tres piezas, bra, panty y falda combinando técnicas en
+                macramé y crochet. Pidelo en tus colores favoritos, escoge el tipo de
+                panty entre brasilera, tanga y ancha, tambien puedes pedir talla
+                difente de bra y panty.
+            </p>
 
             <!-- Formulario de Opciones -->
             <form id="product-options">
                 <!-- Opción (Precio/Modelo) -->
                 <div>
-                    <label for="opcion">Elige una opción:</label>
-                    <select class="opcion-producto" id="opcion" name="opcion" required onchange="actualizarPrecio()">
-                        <option value="En tejido continuo - $150.000">En tejido continuo - $150.000</option>
-                        <option value="Con falda Crochet - $200.000">Con falda Crochet - $200.000</option>
-                    </select>
+                    <div class="producto-precio" id="precio-mostrado">
+                        De ajustar - $145.000
+                    </div>
                 </div>
-
-                <!-- Precio Mostrado -->
-                <div class="producto-precio" id="precio-mostrado">$150.000</div>
 
                 <!-- Talla Top -->
                 <div>
@@ -99,85 +98,43 @@
                 </div>
 
                 <!-- Color -->
-                <!-- Color Principal -->
                 <div class="color-selector">
-                    <p>Elige el color <strong>principal</strong>:</p>
+                    <p>Elige el color principal:</p>
                     <div class="color-options">
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Negro" required />
+                            <input type="radio" name="color" value="Negro" required />
                             <img src="img/NegroC.png" alt="Color Negro" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Rojo" required />
-                            <img src="img/RojoC.png" alt="Color Rojo" />
+                            <input type="radio" name="color" value="Rojo" required />
+                            <img src="img/RojoC.png" alt="Color Blanco" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Beige" required />
-                            <img src="img/MoradoC.png" alt="Color Morado" />
+                            <input type="radio" name="color" value="Beige" required />
+                            <img src="img/MoradoC.png" alt="Color morado" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Rosado" required />
-                            <img src="img/RosadoC.png" alt="Color Rosado" />
+                            <input type="radio" name="color" value="Negro" required />
+                            <img src="img/RosadoC.png" alt="color rosa" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Azul" required />
-                            <img src="img/AzulC.png" alt="Color Azul" />
+                            <input type="radio" name="color" value="Rojo" required />
+                            <img src="img/AzulC.png" alt="Color azul" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Azul Claro" required />
-                            <img src="img/Azul ClaroC.png" alt="Color Azul Claro" />
+                            <input type="radio" name="color" value="Beige" required />
+                            <img src="img/Azul ClaroC.png" alt="Color azul claro" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Blanco" required />
-                            <img src="img/BlancoC.png" alt="Color Blanco" />
+                            <input type="radio" name="color" value="Rojo" required />
+                            <img src="img/BlancoC.png" alt="Color blanco" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Verde Oliva" required />
-                            <img src="img/VerdeOlivaC.png" alt="Color Verde Oliva" />
+                            <input type="radio" name="color" value="Beige" required />
+                            <img src="img/VerdeOlivaC.png" alt="Color Verde oliva" />
                         </label>
                     </div>
                 </div>
-
-                <!-- Color Secundario -->
-                <div class="color-selector">
-                    <p>Elige el color <strong>secundario</strong>:</p>
-                    <div class="color-options">
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Negro" required />
-                            <img src="img/NegroC.png" alt="Color Negro" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Rojo" required />
-                            <img src="img/RojoC.png" alt="Color Rojo" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Beige" required />
-                            <img src="img/MoradoC.png" alt="Color Morado" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Rosado" required />
-                            <img src="img/RosadoC.png" alt="Color Rosado" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Azul" required />
-                            <img src="img/AzulC.png" alt="Color Azul" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Azul Claro" required />
-                            <img src="img/Azul ClaroC.png" alt="Color Azul Claro" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Blanco" required />
-                            <img src="img/BlancoC.png" alt="Color Blanco" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Verde Oliva" required />
-                            <img src="img/VerdeOlivaC.png" alt="Color Verde Oliva" />
-                        </label>
-                    </div>
-                </div>
-
-
 
                 <!-- Botón -->
                 <button type="submit">Agregar al carrito</button>
@@ -189,7 +146,6 @@
 </body>
 <footer class="footerContainer">
     <div class="footerContent">
-
         <!-- Columna 1: Logo y Frase -->
         <div class="footerColumn footerBrand">
             <img src="img/Recurso 2.png" alt="Artesana Mar Logo" class="footerLogo" />
@@ -207,8 +163,13 @@
         <!-- Columna 3: Contacto y Métodos de Pago -->
         <div class="footerColumn footerContact">
             <h4>Contacto</h4>
-            <p><i class="fab fa-instagram" style="color: #ffffff;"></i> artesanamar@gmail.com</p>
-            <p><i class="fab fa-whatsapp" style="color: #ffffff;"></i> +573197356331</p>
+            <p>
+                <i class="fab fa-instagram" style="color: #ffffff"></i>
+                artesanamar@gmail.com
+            </p>
+            <p>
+                <i class="fab fa-whatsapp" style="color: #ffffff"></i> +573197356331
+            </p>
             <h4>Métodos de Pago</h4>
             <div class="footerPayments">
                 <img src="img/Logo Nequi.png" alt="Nequi" />
@@ -217,7 +178,6 @@
                 <img src="img/Logo PSE.png" alt="PSE" />
             </div>
         </div>
-
     </div>
 
     <div class="footerCopyright">

@@ -47,30 +47,23 @@
     <main class="producto-container">
         <!-- Imagen del Producto -->
         <div class="producto-imagen">
-            <img src="img/Ref palo 4.jpeg" alt="Referencia Palomino" />
+            <img src="img/Ref estrella (1).jpeg" alt="Referencia Estrella" />
         </div>
 
         <!-- Información del Producto -->
         <div class="producto-info">
-            <h1>Referencia Palomino</h1>
-            <p>Traje de baño de dos piezas, con detalles tejidos a mano, doble faz. <br>
+            <h1>Referencia Estrella</h1>
+            <p>Traje de baño de dos piezas, top tejido en técnica macramé, panty con detalles entorchados, elaborado en
+                lycra satinada y teñido a mano.
+                Pidelo en azul, rosa, marfil y negro, escoge el tipo de panty entre brasilera, tanga y ancha, tambien
+                puedes pedir talla difente de bra y panty. </p>
 
-                Pidelo en tus colores favoritos, escoge el tipo de panty entre brasilera,
-                tanga y ancha, tambien puedes pedir talla difente de bra y panty. </p>
-
-            <!-- Formulario de Opciones -->
+                <!-- Formulario de Opciones -->
             <form id="product-options">
                 <!-- Opción (Precio/Modelo) -->
                 <div>
-                    <label for="opcion">Elige una opción:</label>
-                    <select class="opcion-producto" id="opcion" name="opcion" required onchange="actualizarPrecio()">
-                        <option value="En tejido continuo - $150.000">En tejido continuo - $150.000</option>
-                        <option value="Con falda Crochet - $200.000">Con falda Crochet - $200.000</option>
-                    </select>
+                    <div class="producto-precio" id="precio-mostrado">De ajustar - $145.000</div>
                 </div>
-
-                <!-- Precio Mostrado -->
-                <div class="producto-precio" id="precio-mostrado">$150.000</div>
 
                 <!-- Talla Top -->
                 <div>
@@ -99,84 +92,43 @@
                 </div>
 
                 <!-- Color -->
-                <!-- Color Principal -->
                 <div class="color-selector">
-                    <p>Elige el color <strong>principal</strong>:</p>
+                    <p>Elige el color principal:</p>
                     <div class="color-options">
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Negro" required />
+                            <input type="radio" name="color" value="Negro" required />
                             <img src="img/NegroC.png" alt="Color Negro" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Rojo" required />
-                            <img src="img/RojoC.png" alt="Color Rojo" />
+                            <input type="radio" name="color" value="Rojo" required />
+                            <img src="img/RojoC.png" alt="Color Blanco" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Beige" required />
-                            <img src="img/MoradoC.png" alt="Color Morado" />
+                            <input type="radio" name="color" value="Beige" required />
+                            <img src="img/Degradado 1.png" alt="Degradado 1" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Rosado" required />
-                            <img src="img/RosadoC.png" alt="Color Rosado" />
+                            <input type="radio" name="color" value="Negro" required />
+                            <img src="img/Degradado 2.png" alt="Degradado 2" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Azul" required />
-                            <img src="img/AzulC.png" alt="Color Azul" />
+                            <input type="radio" name="color" value="Rojo" required />
+                            <img src="img/Degradado 3.png" alt="Degradado 3" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Azul Claro" required />
-                            <img src="img/Azul ClaroC.png" alt="Color Azul Claro" />
+                            <input type="radio" name="color" value="Beige" required />
+                            <img src="img/Degradado 4.png" alt="Degradado 4" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Blanco" required />
-                            <img src="img/BlancoC.png" alt="Color Blanco" />
+                            <input type="radio" name="color" value="Rojo" required />
+                            <img src="img/AzulMacra.png" alt="Color azul" />
                         </label>
                         <label>
-                            <input type="radio" name="colorPrincipal" value="Verde Oliva" required />
-                            <img src="img/VerdeOlivaC.png" alt="Color Verde Oliva" />
+                            <input type="radio" name="color" value="Beige" required />
+                            <img src="img/RosadoMacra.png" alt="Color Rosa" />
                         </label>
                     </div>
                 </div>
-
-                <!-- Color Secundario -->
-                <div class="color-selector">
-                    <p>Elige el color <strong>secundario</strong>:</p>
-                    <div class="color-options">
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Negro" required />
-                            <img src="img/NegroC.png" alt="Color Negro" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Rojo" required />
-                            <img src="img/RojoC.png" alt="Color Rojo" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Beige" required />
-                            <img src="img/MoradoC.png" alt="Color Morado" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Rosado" required />
-                            <img src="img/RosadoC.png" alt="Color Rosado" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Azul" required />
-                            <img src="img/AzulC.png" alt="Color Azul" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Azul Claro" required />
-                            <img src="img/Azul ClaroC.png" alt="Color Azul Claro" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Blanco" required />
-                            <img src="img/BlancoC.png" alt="Color Blanco" />
-                        </label>
-                        <label>
-                            <input type="radio" name="colorSecundario" value="Verde Oliva" required />
-                            <img src="img/VerdeOlivaC.png" alt="Color Verde Oliva" />
-                        </label>
-                    </div>
-                </div>
-
 
 
                 <!-- Botón -->
